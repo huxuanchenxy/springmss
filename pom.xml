@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mss-service-user</module>
+        <module>mss-server-eureka</module>
     </modules>
 
     <parent>
@@ -21,6 +22,8 @@
         <java.version>1.8</java.version>
         <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.cloud.version>Hoxton.SR5</spring.cloud.version>
+        <eureka.starter.version>1.4.2.RELEASE</eureka.starter.version>
         <skipTests>true</skipTests>
     </properties>
     <build>

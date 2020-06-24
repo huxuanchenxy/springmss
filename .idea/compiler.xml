@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mss-service-user" />
+        <module name="mss-server-eureka (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mss-server-eureka" target="1.8" />
       <module name="mss.service.provider" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mss-server-eureka" options="-parameters" />
+      <module name="mss-server-eureka (1)" options="-parameters" />
       <module name="mss-service-user" options="-parameters -nowarn" />
     </option>
   </component>
