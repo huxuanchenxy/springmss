@@ -20,3 +20,8 @@ spring:
     properties:
       hibernate:
         format_sql: true #是否格式化sql
+
+#springdoc:
+#  swagger-ui:
+#    path: /api-docs.html
+#  packagesToScan: mss.service.user.controller

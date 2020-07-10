@@ -2,3 +2,6 @@
 target
 /.idea
 /*.iml
+/mss-service-demo/*.iml
+/mss-service-demo/*.md
+/mss-global-handler/*.iml
