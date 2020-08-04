@@ -12,11 +12,25 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mss-service-user</name>
 	<description>Demo project for Spring Boot</description>
-
+<!--	<packaging>pom</packaging>-->
+<!--	<modules>-->
+<!--		<module>../mss-global-handler</module>-->
+<!--	</modules>-->
 	<properties>
 		<skipTests>true</skipTests>
 	</properties>
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<url>http://10.89.36.199:8081/repository/maven-releases/</url>
+		</repository>
+	</repositories>
 	<dependencies>
+		<dependency>
+			<groupId>org.seari</groupId>
+			<artifactId>mss-global-handler</artifactId>
+			<version>0.0.1-RELEASE</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,15 +53,33 @@
 			<version>1.18.10</version>
 		</dependency>
 		<dependency>
-			<groupId>org.seari</groupId>
-			<artifactId>mss-server-eureka</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.62</version>
 		</dependency>
 		<dependency>
-			<groupId>org.seari</groupId>
-			<artifactId>mss-tool-global</artifactId>
-			<version>0.0.1-RELEASE</version>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.4.1</version>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.seari</groupId>-->
+<!--			<artifactId>mss-server-eureka</artifactId>-->
+<!--			<version>0.0.1-SNAPSHOT</version>-->
+<!--		</dependency>-->
+
+		<!--		<dependency>-->
+<!--			<groupId>com.purgeteam.cloud</groupId>-->
+<!--			<artifactId>spirng-cloud-purgeteam</artifactId>-->
+<!--			<version>0.3.0.RELEASE</version>-->
+<!--			<type>pom</type>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/com.purgeteam.cloud/unified-dispose-spring-cloud-starter -->
+<!--		<dependency>-->
+<!--			<groupId>com.purgeteam.cloud</groupId>-->
+<!--			<artifactId>unified-dispose-spring-cloud-starter</artifactId>-->
+<!--			<version>0.3.0.RELEASE</version>-->
+<!--		</dependency>-->
 	</dependencies>
 	<build>
 		<plugins>

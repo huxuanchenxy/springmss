@@ -1,23 +1,25 @@
-package mss.service.user.controller;
+package mss.service.demo;
 
-import mss.global.handler.IgnorReponseAdvice;
-import mss.global.handler.ResponseData;
-import mss.service.user.entity.User;
-import mss.service.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 @RestController
-public class UserController {
+public class DemoController {
+    @GetMapping("user")
+    public User user() {
+        User u = new User(100L, "u1");
+        return u;
+    }
 
-
-
+    @GetMapping("userList")
+    public List<User> userList(){
+        List<User> list = new ArrayList<User>();
+        list.add(new User(100L, "u1"));
+        list.add(new User(200L, "u2"));
+        return list;
+    }
 
     @GetMapping("test1")
     public String test1(){

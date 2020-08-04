@@ -1,4 +1,5 @@
-package mss.tool.global;
+package mss.service.demo;
+
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
