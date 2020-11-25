@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 /**
  * 实现ResponseBodyAdvice接口，可以对返回值在输出之前进行修改
  */
-@RestControllerAdvice
+//@RestControllerAdvice
 public class GlobalResponseHandler implements ResponseBodyAdvice<Object> {
 
     //判断支持的类型

@@ -13,6 +13,11 @@ public class DemoController {
         return u;
     }
 
+    @GetMapping("health.json")
+    public String health() {
+        return "{\"status\":\"up\"}";
+    }
+
     @GetMapping("userList")
     public List<User> userList(){
         List<User> list = new ArrayList<User>();

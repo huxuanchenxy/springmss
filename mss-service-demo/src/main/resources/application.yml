@@ -1,2 +1,11 @@
 server:
   port: 9002
+
+spring:
+  application:
+    name: demo-sidecar
+
+#eureka:
+#  client:
+#    healthcheck:
+#      enabled: true
